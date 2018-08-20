@@ -15,7 +15,7 @@ class SERVER {
 	fd_set origin, copy;
 	sockaddr_in addr_info;
 	SOCKET server_sock;
-	std::string welcome_msg = "		___________________CLAN-CHAT(v1.0)__________________\r\n";
+	std::string welcome_msg = "		___________________Clan-Talks(v1.0)__________________\r\n";
 	std::string rule0 = "			      Type & Enter '#' to Exit\n";
 	std::string rule1 = "	         Type $[yourname] to let others know who you are B)\n\n";
 	std::unordered_map <std::string, std::string> client_info;
