@@ -14,20 +14,20 @@
 #define FALSE  0
 #define MAX_CLIENTS 30
 
-class CLAN_CHAT{
+class CLAN_TALKS{
     fd_set origin;
     int client_sock[MAX_CLIENTS] = {0};
     char buff[1024];
     int server_sock, new_socket, opt, PORT;
     sockaddr_in address;
     int listen_val, addrlen, sd, max_sd, bind_val;
-    std::string welcome_msg = "		___________________CLAN-CHAT(v1.0)__________________\r\n";
+    std::string welcome_msg = "		___________________Clan-Talks(v1.0)__________________\r\n";
 	  std::string rule0 = "			      Type & Enter '#' to Exit\n";
 	  std::string rule1 = "	         Type $[yourname] to let others know who you are B)\n\n";
     std::unordered_map <std::string, std::string> client_info;
 
     public:
-        CLAN_CHAT() : PORT(12300), opt(TRUE) { }
+        CLAN_TALKS() : PORT(12300), opt(TRUE) { }
 
         void create_sock(){         //Create SOCKET
             std::cout << "Creating SOCKET...\n";
@@ -155,7 +155,7 @@ class CLAN_CHAT{
 
 };
 int main(int argc, char *argv[]){
-    CLAN_CHAT engine;
+    CLAN_TALKS engine;
 
     engine.create_sock();
 
