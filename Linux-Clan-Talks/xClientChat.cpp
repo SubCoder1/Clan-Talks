@@ -25,7 +25,7 @@ class CLAN_TALKS{
 	  std::string rule0 = "			      Type & Enter '#' to Exit\n";
 	  std::string rule1 = "	         Type $[yourname] to let others know who you are B)\n\n";
     std::unordered_map <std::string, std::string> client_info;
-
+	
     public:
         CLAN_TALKS() : PORT(12300), opt(TRUE) { }
 
